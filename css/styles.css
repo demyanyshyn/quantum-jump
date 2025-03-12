@@ -376,7 +376,7 @@ h4 {
   color: var(--blue-color);
 }
 .benefits-magnolia {
-  background-image: url(./images/mobile/magnoliya@mobile.png);
+  background-image: url(../images/mobile/magnoliya@mobile.png);
   background-repeat: no-repeat;
   background-position: 0 0px;
   width: 219px;
