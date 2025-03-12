@@ -6,15 +6,15 @@
   --rose-background: #ffeafc;
   --link: #23bdff;
 
-  --font-family: "Lato", sans-serif;
-  --second-family: "Playfair Display", sans-serif;
-  --third-family: "Inter", sans-serif;
-  --font3: "Extenda", sans-serif;
+  --font-family: 'Lato', sans-serif;
+  --second-family: 'Playfair Display', sans-serif;
+  --third-family: 'Inter', sans-serif;
+  --font3: 'Extenda', sans-serif;
 }
 @font-face {
-  font-family: "Extenda";
-  src: url("../fonts/extenda-20-micro.otf");
-  src: url("../fonts/extenda-20-micro.otf?iefix") format("eot");
+  font-family: 'Extenda';
+  src: url('../fonts/extenda-20-micro.otf');
+  src: url('../fonts/extenda-20-micro.otf?iefix') format('eot');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,6 +22,7 @@ body {
   background-color: #ecfeff;
   font-family: var(--font-family);
   color: var(--blue-color);
+  background: #ecfeff;
   padding: 0;
   margin: 0;
 }
@@ -78,6 +79,14 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+h2 {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--blue-color);
+  font-family: var(--font-family);
 }
 h3 {
   font-family: var(--font-family);
@@ -202,9 +211,14 @@ h3 {
 /*#endregion Header____________________ */
 
 /*#region Hero____________________ */
-
 .hero {
+  box-shadow: 0 14px 8px 0 rgba(74, 135, 226, 0.15);
+  padding-bottom: 60px;
+}
+
+.hero-image {
   position: absolute;
+  min-height: 522px;
   z-index: -1;
   top: 0;
   left: 50%;
@@ -212,9 +226,13 @@ h3 {
   background-image: url(../images/mobile/hero@mob.jpg);
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
   width: 100%;
+
+  padding-bottom: 20px;
 }
 .hero-info {
+  margin-left: 30px;
   margin-top: 115px;
   max-width: 112px;
   font-weight: 400;
@@ -227,8 +245,8 @@ h3 {
   min-width: 300px;
   max-width: 375px;
   margin: auto;
-  margin-top: 191px;
-  line-height: 76px;
+  margin-top: 80px;
+  line-height: 81px;
   text-transform: uppercase;
   font-family: var(--font3);
   font-weight: 201;
@@ -252,7 +270,43 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.hero-btn-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 45px;
+
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: var(--blue-color);
+
+  border-radius: 25px;
+  padding: 25px 67px;
+  width: 307px;
+  height: 74px;
+
+  box-shadow: 0 4px 10px 0 rgba(39, 56, 113, 0.25);
+  background: linear-gradient(180deg, #7af9fe 0%, #a6f2ff 50%, #00bff3 100%);
+}
 /*#endregion Hero____________________ */
+
+/*#region About____________________ */
+
+.about-text {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: var(--siniy-dop-cvet);
+}
+/*#endregion About____________________ */
 
 /*#region Header   Modal   Menu____________________ */
 .modal-menu {
@@ -307,6 +361,8 @@ h3 {
 .menu-link {
   text-align: center;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .menu-swith-lang {
   padding: 20px;
@@ -314,4 +370,4 @@ h3 {
   margin-top: auto;
   text-align: center;
 }
-/*#endregion Header____________________ */
+/*#endregion  Header   Modal   Menu________________________________________ */
