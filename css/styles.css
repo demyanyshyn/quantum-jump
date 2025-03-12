@@ -92,11 +92,10 @@ h2 {
 h3 {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 16px;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
+  font-size: 24px;
+  text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: var(--siniy-dop-cvet);
 }
 h4 {
   font-weight: 400;
@@ -166,7 +165,13 @@ h4 {
 
 .header-title {
   max-width: 120px;
-
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #fff;
   margin: auto;
 }
 .header-social {
@@ -393,22 +398,95 @@ h4 {
   margin-top: 100px;
 }
 .help-title {
-  min-width: 310px;
+  max-width: 310px;
+  margin: auto;
 }
 .help-list {
   margin-top: 50px;
 }
 .help-item {
+  margin: auto;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .help-item-image {
 }
 .help-item-info {
+  margin-top: 20px;
 }
 .help-item-title {
 }
 .help-item-content {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: var(--blue-color);
+}
+
+.help-magnolia {
+  margin-left: auto;
 }
 /*#endregion Help____________________ */
+/*#region Consult____________________ */
+.consult-test {
+  background-image: url(../images/mobile/background-consult@mobile.png),
+    url('data:image/svg+xml,<svg width="375" height="380" viewBox="0 0 375 380" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-135 0V380H516V0C261.77 25.0605 119.233 25.0119 -135 0Z" fill="%23020064" /></svg>');
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 80px;
+  transform: translateY(-150px);
+}
+.consult-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -80px);
+}
+.consult-test-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.consult-test-title {
+  color: var(--rose-background);
+  text-transform: uppercase;
+  max-width: 255px;
+  font-size: 24px;
+}
+.consult-test-content {
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+  font-family: var(--font-family);
+  max-width: 300px;
+}
+.consult-test-button {
+  transform: translateY(60%);
+}
+.hero-btn {
+}
+.methods {
+}
+.methods-wrapper {
+}
+.methods-hero-image {
+}
+.methods-title {
+}
+.methods-list {
+}
+.methods-item {
+}
+.methods-button {
+}
+/*#endregion Consult____________________ */
 /*#region Header   Modal   Menu____________________ */
 .modal-menu {
   position: absolute;
