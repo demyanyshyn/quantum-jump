@@ -439,7 +439,8 @@ h4 {
   background-size: cover;
   position: relative;
   padding-top: 80px;
-  transform: translateY(-150px);
+  /* transform: translateY(-150px); */
+  margin-top: -150px;
 }
 .consult-logo {
   position: absolute;
@@ -470,17 +471,46 @@ h4 {
 .consult-test-button {
   transform: translateY(60%);
 }
-.hero-btn {
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
 }
+
 .methods {
+  background-color: var(--rose-background);
+  padding: 20px;
+  padding-top: 100px;
 }
 .methods-wrapper {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    url('path_to_image');
+  box-shadow: 0 4px 28px 0 rgba(157, 147, 219, 0.37);
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background: white url(../images/mobile/background-method@mobile.png);
+  background-size: 50%;
+  -webkit-clip-path: url(#my-clip-path);
+  clip-path: url(#my-clip-path);
+  filter: drop-shadow(2px 2px black);
+  box-shadow: 2px 2px black;
 }
 .methods-hero-image {
 }
 .methods-title {
 }
+.methods-list-wrapper {
+  transform: scaleY(500%);
+}
 .methods-list {
+  background: #000;
+  border-radius: 40px;
 }
 .methods-item {
 }
